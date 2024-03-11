@@ -1,0 +1,297 @@
+.services-wrapper {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../assets/discover/discover-background.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.services-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    margin-top: 7rem;
+
+    flex-wrap: wrap;
+
+    @media (max-width: 1367px) {
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 0;
+    }
+}
+
+.services-col-left,
+.services-col-right {
+    padding-top: 4rem;
+
+    @media (max-width: 480px) {
+        padding-top: 0;
+
+        margin-bottom: 2.2rem;
+    }
+}
+
+.services-col-left {
+    flex: 1;
+
+    .services-heading {
+        color: #ffffff;
+
+        font-family: "Monument Extended";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 54.3345px;
+        line-height: 95%;
+        text-transform: uppercase;
+
+        margin: 0;
+
+        @media (max-width: 512px) {
+            font-size: 42px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 32px;
+        }
+    }
+
+    .services-info {
+        color: #ffffff;
+
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 139.5%;
+        text-transform: uppercase;
+
+        @media (max-width: 512px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.services-col-right {
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.service-lists {
+    display: flex;
+    gap: 2.5rem;
+    // flex-wrap: wrap;
+
+    color: white;
+
+    @media (max-width: 675px) {
+        gap: 1rem;
+    }
+
+    @media (max-width: 400px) {
+        gap: 0.4rem;
+    }
+
+    .list-wrapper {
+        flex: 1;
+
+        padding: 4px;
+        border-radius: 10.0214px;
+
+        @media (max-width: 480px) {
+            padding: 1.5px;
+        }
+
+        @keyframes GradientBorder {
+            0% {
+                background-position: 78% 0%;
+            }
+            50% {
+                background-position: 23% 100%;
+            }
+            100% {
+                background-position: 78% 0%;
+            }
+        }
+
+        background: white;
+        // background: linear-gradient(264deg, #ac2bf9, #4c196a, #2ba6f9);
+        // background-size: 600% 600%;
+
+        // animation: GradientBorder 3s ease infinite;
+
+        &-alt {
+            @keyframes GradientAlt {
+                0% {
+                    background-position: 58% 100%;
+                }
+                50% {
+                    background-position: 43% 0%;
+                }
+                100% {
+                    background-position: 43% 0%;
+                }
+            }
+
+            background: white;
+            // background: linear-gradient(19deg, #00f2ff, #ac2bf9, #414141);
+            // background-size: 600% 600%;
+
+            // animation: GradientAlt 3s ease infinite;
+        }
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        background: black;
+
+        height: 100%;
+
+        border-radius: 10.0214px;
+        // border: 1px solid #ffffffaa;
+
+        .heading {
+            background: linear-gradient(
+                103.3deg,
+                #000000 -26.79%,
+                #4c196a 49.09%,
+                #000000 118.9%
+            );
+            backdrop-filter: blur(5.01069px);
+            border-radius: 10.0214px;
+            border-bottom: 1px solid #ffffffaa;
+
+            padding: 2rem;
+
+            @media (max-width: 675px) {
+                padding: 1rem;
+            }
+
+            @media (max-width: 480px) {
+                padding: 0.4rem;
+            }
+
+            .name {
+                font-family: "Integral CF";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 151%;
+                text-align: center;
+                text-transform: uppercase;
+
+                margin: 0;
+
+                @media (max-width: 675px) {
+                    font-size: 26px;
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 15px;
+                }
+            }
+            .description {
+                display: block;
+
+                font-family: "Integral CF";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 151%;
+                text-align: center;
+                text-transform: uppercase;
+
+                @media (max-width: 675px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .items {
+            display: flex;
+            flex-direction: column;
+
+            gap: 1.5rem;
+
+            padding: 3rem 2rem;
+
+            margin-top: 0.5rem;
+
+            @media (max-width: 675px) {
+                padding: 2rem 1rem;
+            }
+
+            @media (max-width: 480px) {
+                padding: 0.4rem 0.4rem;
+                gap: 1rem;
+            }
+
+            @media (max-width: 335px) {
+                gap: 0.6rem;
+                padding-bottom: 1rem;
+            }
+
+            .item {
+                color: #ffffff;
+
+                font-family: "Integral CF";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 121%;
+                text-align: center;
+                text-transform: uppercase;
+
+                @media (max-width: 512px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 10px;
+                }
+
+                @media (max-width: 335px) {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+
+.service-titles {
+    display: flex;
+    gap: 2.5rem;
+
+    .title {
+        flex: 1;
+        color: #ffffff;
+        text-align: center;
+
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 151%;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        @media (max-width: 662px) {
+            display: none;
+        }
+    }
+}

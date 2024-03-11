@@ -1,0 +1,303 @@
+.features-container {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../assets/discover/discover-background.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    padding: 1rem;
+
+    // margin-top: 3rem;
+    padding-bottom: 6rem;
+
+    @media (max-width: 768px) {
+        // margin-top: -3rem;
+    }
+
+    @media (max-width: 382px) {
+        // margin-top: 3rem;
+    }
+}
+
+.features-sub-heading,
+.features-heading {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 83%;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0;
+
+    @media (max-width: 1440px) {
+        font-size: 36px;
+    }
+}
+
+.features-sub-heading {
+    color: white;
+
+    .features-sub-heading-initial-word {
+        @media (max-width: 480px) {
+            position: relative;
+            left: 18%;
+        }
+
+        @media (max-width: 382px) {
+            // position: initial;
+        }
+    }
+}
+
+.features-heading {
+    color: #ac2bf9;
+}
+
+.features-heading-image {
+    display: inline-block;
+    max-width: 200px;
+    position: relative;
+    z-index: -1;
+    top: 4rem;
+
+    @keyframes up-and-down {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-1rem);
+        }
+    }
+
+    animation: up-and-down 1s ease-in-out infinite alternate;
+
+    @media (max-width: 1367px) {
+        // width: 100px;
+        top: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        top: 2rem;
+        height: 220px;
+    }
+}
+
+.features-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    max-height: 500px;
+
+    margin-top: 2.4rem;
+
+    @media (max-width: 1440px) {
+        gap: 1rem;
+        margin-top: 0;
+        max-width: 700px !important;
+    }
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+        gap: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 2rem;
+    }
+}
+
+.feature-cards {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @media (max-width: 1367px) {
+        gap: 1rem;
+    }
+
+    @media (max-width: 1000px) {
+        order: 2;
+    }
+
+    @media (max-width: 768px) {
+        gap: 1rem;
+    }
+}
+
+.feature-card {
+    flex: 1;
+    padding: 1rem 1.5rem;
+
+    @media (max-width: 1440px) {
+        padding: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 1.2rem 2rem;
+    }
+
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        103.3deg,
+        #ac2bf9 -26.79%,
+        rgba(0, 0, 0, 0) 49.09%,
+        #ac2bf9 118.9%
+    );
+    backdrop-filter: blur(5.01069px);
+    border-radius: 10.0214px;
+    background-size: 200%;
+    background-position: center;
+
+    border: 0.5px solid #ffffffaa;
+
+    .feature-card-label {
+        color: white;
+
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 104%;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media (max-width: 1367px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.feature-image-container {
+    position: relative;
+    flex: 2.5;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // width: 80%;
+
+    @media (max-width: 1000px) {
+        // order: 1;
+        display: none;
+    }
+
+    .feature-image {
+        //width: 100%;
+        height: 100%;
+        max-height: 480px;
+    }
+
+    .feature-image-content-wrapper {
+        position: absolute;
+        bottom: 1rem;
+        // width: 100%;
+        width: fit-content;
+
+        @media (max-width: 1367px) {
+            bottom: 1rem;
+        }
+
+        .feature-image-content {
+            // width: fit-content;
+            margin: 0 auto;
+            padding: 1rem;
+
+            .feature-image-content-sub-heading {
+                color: #ac2bf9;
+                display: block;
+
+                font-family: "Monument Extended";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 98%;
+                text-transform: uppercase;
+
+                @media (max-width: 1367px) {
+                    font-size: 1.4rem;
+                }
+
+                @media (max-width: 440px) {
+                    font-size: 1rem;
+                }
+            }
+
+            .feature-image-content-heading {
+                color: #ffffff;
+                display: block;
+
+                font-family: "Monument Extended";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 98%;
+                text-transform: uppercase;
+
+                @media (max-width: 1367px) {
+                    font-size: 2.8rem;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 2.5rem;
+                }
+
+                @media (max-width: 440px) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.features-info {
+    color: white;
+
+    font-family: "Integral CF";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 139.5%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    max-width: 76ch;
+    margin: 0 auto;
+
+    margin-top: 2rem;
+
+    @media (max-width: 1367px) {
+        margin-top: 0;
+        font-size: 14px;
+    }
+}

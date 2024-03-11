@@ -1,0 +1,52 @@
+.stats-container {
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    flex-wrap: wrap;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .stat-number {
+        color: #ac2bf9;
+
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 103.298px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        @media (max-width: 1367px) {
+            font-size: 70px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 64px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 44px;
+        }
+    }
+
+    .stat-label {
+        color: white;
+        text-transform: uppercase;
+        font-family: "Integral CF";
+    }
+}
