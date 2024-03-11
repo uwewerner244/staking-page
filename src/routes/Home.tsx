@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Header_navbar from "../components/header/Header-nav";
 import Hero from "../components/home/Hero";
 import Parallax from "../components/parallax/Parallax";
 // import Discover from "../components/discover/Discover";
@@ -20,6 +21,7 @@ const Home: FC = () => {
     return (
         <>
             {/* <MobileNavigation /> */}
+            <Header_navbar />
 
             <Hero />
 

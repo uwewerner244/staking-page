@@ -8,7 +8,7 @@ import MobileNavigation from "./MobileNavigation";
 const Header: FC = () => {
     return (
         <header className="site-header site-content-container">
-            <img src={PAALAILogo} alt="PAAL AI Logo" className="company-logo" />
+            {/* <img src={PAALAILogo} alt="PAAL AI Logo" className="company-logo" /> */}
 
             {/* <div className="header-action">
                 <Button
@@ -16,7 +16,7 @@ const Header: FC = () => {
                     link="https://paalai.io/whitepaper.pdf"
                 />
             </div> */}
-            <MobileNavigation />
+            {/* <MobileNavigation /> */}
         </header>
     );
 };
